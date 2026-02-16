@@ -16,3 +16,10 @@ html, bodY{
   padding: 30px;
   margin: 20px;
 }
+
+.nav{
+  background-color: lightblue;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+}

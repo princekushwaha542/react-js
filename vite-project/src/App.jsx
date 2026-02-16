@@ -5,10 +5,19 @@ import NavBar from './components/NavBar'
 
 const App = () => {
   return (
+    <>
     <div>
       <NavBar />
       <Card />
     </div>
+    <div>
+      <NavBar />
+      <Card />
+    </div><div>
+      <NavBar />
+      <Card />
+    </div>
+    </>
   )
 }
 
