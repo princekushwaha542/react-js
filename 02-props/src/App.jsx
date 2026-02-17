@@ -1,14 +1,16 @@
 import React from 'react'
-
+import Card from './componet/card'
 const App = () => {
   return (
     <div>
+      
       <div className="parent">
-        <div className="card">
-          <h1>Prince kushwaha</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, pariatur?</p>
-          <button className='btn'>view profile</button>
-        </div>
+        <Card />
+        <Card user='prince' />
+        <Card />
+        <Card />
+        <Card />
+        
       </div>
     </div>
   )
