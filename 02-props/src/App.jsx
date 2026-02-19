@@ -2,17 +2,11 @@ import React from 'react'
 import Card from './componet/card'
 const App = () => {
   return (
-    <div>
-      
       <div className="parent">
-        <Card />
-        <Card user='prince' />
-        <Card />
-        <Card />
-        <Card />
+      <Card name="Prince" age={30} city="New York " img=""/>
+      <Card name="Sarthak" age={30} city="New York" />
         
       </div>
-    </div>
   )
 }
 
