@@ -8,19 +8,17 @@ html,body{
   width: 100%;
   font-family: 'Poppins', sans-serif;
 }
-.parent{
-  height: 100vh;
-  width: 100%;
-  background-color:#111;
-  padding: 20px;
-}
+
 .card{
+  display: inline-block;
   height: 400px;
   width: 300px;
-  background-color:#fff;
+  background-color:#ebe5e5;
   border-radius: 30px;
   padding: 20px;
   padding-top: 40px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .card .top{
   height: 20px;
@@ -32,18 +30,9 @@ html,body{
 }
 .card .top img{
   height: 50px;
-  width: 55px;
+  width: 50px;
   border-radius: 50px;
-
-}
-.save-btn{
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  background-color: white
-
+  background: transparent;
 }
 .center{
   padding-top: 40px;
@@ -79,12 +68,21 @@ html,body{
   justify-content:space-between;
 }
 .bottom button{
+  cursor: pointer;
   margin-top: 30px;
   border: none;
   background-color: #111;
   color: white;
   padding: 10px 20px;
   border-radius: 30px;
+}
+.save-btn{
+  background: transparent !important;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+ 
 }
 .bottom button:hover{
   background-color: #e9e3e3;
