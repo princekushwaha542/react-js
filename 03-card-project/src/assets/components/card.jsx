@@ -9,16 +9,16 @@ const Card = (props) => {
         <button className="save-btn"><Bookmark className='save-icon'/></button>
       </div>
       <div className="center"> 
-        <h3>{props.companyName} <span>5 days ago</span></h3>
-        <h2>{props.jobTitle}</h2>
+        <h3>{props.companyName} <span>{props.datePosted}</span></h3>
+        <h2>{props.post}</h2>
         <div>
-          <h4>{props.jobType}</h4>
-          <h4>{props.level}</h4>
+          <h4>{props.tag1}</h4>
+          <h4>{props.tag2}</h4>
         </div>
       </div>
       <div className="bottom">
          <div>
-          <h1>{props.salary}/hr</h1>
+          <h1>{props.pay}</h1>
           <p>{props.location}</p>
          </div>
          <button>Apply </button>
