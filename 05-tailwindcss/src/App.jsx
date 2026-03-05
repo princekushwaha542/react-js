@@ -2,8 +2,8 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-blue-400">Welcome to Tailwind CSS!</h1>
+    <div className='h-screen w-full bg-gray-400'>
+      
     </div>
   )
 }
