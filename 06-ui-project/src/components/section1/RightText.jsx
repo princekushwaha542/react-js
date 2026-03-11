@@ -6,7 +6,7 @@ const RightText = (props) => {
     overflow-x-auto '>
      { props.user.map(function(elem){
      
-      return <RightCard img={elem.img} tag={elem.tag} />
+      return <RightCard img={elem.img} tag={elem.tag} sno={elem.sno} />
      })}
     
 
