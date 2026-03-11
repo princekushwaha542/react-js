@@ -11,7 +11,7 @@ const LeftText = () => {
           </p>
       </div>
       <div className='text-4xl pl-9 pb-9'>
-         <ArrowUpRight size={60} /> 
+         <ArrowUpRight size={90} /> 
       </div>
     </div>
   )

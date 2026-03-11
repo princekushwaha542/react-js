@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './componet/card'
+import Card from './components/card'
 const App = () => {
   return (
       <div className="parent">
