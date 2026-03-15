@@ -1,7 +1,7 @@
 import React, { useActionState, useState, useSyncExternalStore } from 'react'
 
 const App = () => {
-  const [num , setNum ] = useState(0)
+  const [num , setNum ] = useState(0) 
   return (
     <div>
       <h1 className="p-20 m-5 bg-red-50 w-90 text-center text-4xl">{num}</h1>
