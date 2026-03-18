@@ -5,6 +5,7 @@
    const SubmitHandler = (elem) =>{
     elem.preventDefault();
     console.log("form submited by",{val})
+    setVal('')
    }
    return (
      <div>
