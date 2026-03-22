@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 const App = () => {
 
   const [title, setTitle] = useState('') 
+  const [details, setDetails] = useState('') 
+  
 
   const submithandler = (e) => {
     e.preventDefault()
@@ -25,10 +27,14 @@ const App = () => {
         <textarea 
           placeholder='Write Details' 
           className='px-5 py-2 h-40 border-2 rounded-xl w-full outline-none font-medium'
+          value={details}
+          onChange={(e) => setDetails(e.target.value)}
         />
 
         <button className='bg-white text-black px-5 py-3 rounded-xl w-full font-medium'
-        onClick={() => setTitle('')}>
+        onClick={() => { setTitle('')
+          setDetails('')
+        }}>
           Add Note
         </button>
       </form>
