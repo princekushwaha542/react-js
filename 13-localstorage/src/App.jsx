@@ -1,12 +1,8 @@
 import React from 'react'
 
-const App = () => {
-  const user = {
-  username: 'prince',
-  age:19,
-  city: 'rewa'
-  }
-  localStorage.setItem('user', JSON.stringify(user))
+const App = () => {  
+  const user = JSON.parse(localStorage.getItem('user'))
+  console.log(user);
   return (
     <div>
       hello
