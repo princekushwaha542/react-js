@@ -4,12 +4,18 @@ const App = () => {
 
   const [title, setTitle] = useState('') 
   const [details, setDetails] = useState('') 
-  
+  const [task , setTask] = useState([])
 
   const submithandler = (e) => {
-    e.preventDefault()
-    console.log(title)
-  }
+  e.preventDefault()
+
+  const copyTask = [...task]
+  copyTask.push({ title, details })
+
+  setTask(copyTask)
+  setTitle('')
+  setDetails('')
+}
 
   return (
     <div className='h-screen bg-black text-white flex flex-wrap'>
@@ -32,9 +38,7 @@ const App = () => {
         />
 
         <button className='bg-white text-black px-5 py-3 rounded-xl w-full font-medium'
-        onClick={() => { setTitle('')
-          setDetails('')
-        }}>
+         >
           Add Note
         </button>
       </form>
@@ -42,8 +46,10 @@ const App = () => {
       <div className='bg-black pt-10 pl-19 lg:w-1/2 w-screen lg:border-l-2'>
         <h1 className='text-4xl font-bold'>Recent Notes</h1><br />
         <div className='flex flex-wrap gap-5 h-full overflow-auto'>
-          <div className='h-62 w-50 rounded-2xl bg-white'></div>
-        </div>
+          {task.map((e,index) =>{
+            return <div className='h-62 w-50 rounded-2xl bg-white'></div>
+          })}
+         </div>
       </div>
     </div>
   )
