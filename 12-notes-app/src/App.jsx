@@ -13,6 +13,7 @@ const App = () => {
   copyTask.push({ title, details })
 
   setTask(copyTask)
+  console.log(task)
   setTitle('')
   setDetails('')
 }
@@ -37,7 +38,7 @@ const App = () => {
           onChange={(e) => setDetails(e.target.value)}
         />
 
-        <button className='bg-white text-black px-5 py-3 rounded-xl w-full font-medium'
+        <button className='bg-white text-black px-5 py-3 active:bg-gray-400 rounded-xl w-full font-medium'
          >
           Add Note
         </button>
