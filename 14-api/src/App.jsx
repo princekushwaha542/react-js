@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   const GetData = async () => {
-      const response =  await fetch('https://jsonplaceholder.typicode.com/todos/1')
+      const response =  await fetch('https://picsum.photos/v2/list?page=2&limit=100')
       const data = await  response.json()
       console.log(data)
     }
