@@ -6,7 +6,6 @@ const App = () => {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Fake weather data generator
   const getWeatherData = (cityName) => {
     return {
       name: cityName,
