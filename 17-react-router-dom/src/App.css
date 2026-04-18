@@ -8,3 +8,11 @@ html,body{
   width: 100%;
   background-color: #ffffff;
 }
+#navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
