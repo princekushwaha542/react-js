@@ -1,30 +1,12 @@
-import React, { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
-
-
+import React from 'react'
+import Navbar from '../../17-react-router-dom/src/components/Navbar'
+import footer from './components/footer'  
 const App = () => {
-  const [isAuth, setIsAuth] = useState(false)
-
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        
-        <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
+      <Navbar />
+      <footer />
 
-        <Route 
-          path="/dashboard" 
-          element={
-            <ProtectedRoute isAuth={isAuth}>
-              <Dashboard />
-            </ProtectedRoute>
-          } 
-        />
-
-        <Route path="/profile/:id" element={<Profile />} />
-
-        <Route path="*" element={<NotFound />} />
-      </Routes>
     </div>
   )
 }
