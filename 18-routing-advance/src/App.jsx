@@ -4,8 +4,7 @@ import footer from './components/footer'
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <footer />
+    
 
     </div>
   )
