@@ -1,11 +1,12 @@
 import React from 'react'
-import Navbar from '../../17-react-router-dom/src/components/Navbar'
-import footer from './components/footer'  
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'  
 const App = () => {
   return (
-    <div>
-    
-
+    <div className='h-screen w-full bg-black text-white'>
+    <Navbar />
+    <Footer />
+    <h1>this is a routing</h1>
     </div>
   )
 }
