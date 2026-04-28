@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link className='text-lg font-medium' to="/services">Services</Link>
       </div>
     </div>
-  )
+  ) 
 }
 
 export default Navbar
