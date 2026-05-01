@@ -7,6 +7,9 @@ import About from './filepage/About'
 import Contact from './filepage/Contact'
 import Service from './filepage/Service'
 import File404 from './filepage/File404'
+import Phone from './filepage/phone'
+import Email from './filepage/Gmail'
+import Address from './filepage/Address'
 
 import { Routes, Route } from 'react-router-dom'
 const App = () => {

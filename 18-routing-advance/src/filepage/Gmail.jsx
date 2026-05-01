@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Gmail = () => {
+const Email = () => {
   return (
-    <div>
-      <h1>Send email to example@gmail.com</h1>
+    <div className="h-screen flex pt-70 justify-center">
+      <h1 className="text-4xl font-bold text-blue-300 animate-pulse">
+        Email Page
+      </h1>
     </div>
   )
 }
 
-export default Gmail
+export default Email
