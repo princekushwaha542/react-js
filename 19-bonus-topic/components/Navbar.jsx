@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = (props) => {
+    function ChangeTheme(){
+      props.setTheme(props.theme === "light" ? "dark" : "light");
+    }
   return (
     <div>
-      <button>Change theme</button>
+      <button onClick={ChangeTheme}>Toggle Theme</button>
     </div>
   )
 }
