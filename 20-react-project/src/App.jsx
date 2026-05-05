@@ -1,11 +1,16 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import MeasureLand from "./pages/MeasureLand";
 
-const App = () => {
+export default function App() {
   return (
-    <div>
-      App
-    </div>
-  )
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/measure" element={<MeasureLand />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
