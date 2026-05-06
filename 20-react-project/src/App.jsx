@@ -5,8 +5,10 @@ import MeasureLand from "./pages/MeasureLand";
 import Dashboard from "./components/Dashboard";
 
 export default function App() {
+
   return (
     <BrowserRouter>
+      
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
