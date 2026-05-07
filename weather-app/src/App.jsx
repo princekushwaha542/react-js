@@ -114,11 +114,7 @@ const App = () => {
                 <p className="font-bold">{data.wind.speed} km/h</p>
               </div>
 
-              <div className="bg-white/20 p-3 rounded-lg">
-                💧 Humidity
-                <p className="font-bold">{data.main.humidity}%</p>
-              </div>
-            </div>
+             
 
           </div>
         )}
