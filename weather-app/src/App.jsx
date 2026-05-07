@@ -100,9 +100,7 @@ const App = () => {
               📍 {data.name}
             </h2>
 
-            <p className="text-5xl font-bold my-3">
-              {data.main.temp}°C
-            </p>
+           
 
             <p className="capitalize text-lg">
               {data.weather[0].description}
