@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Mail, Lock } from "lucide-react";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  
+  const submitHandler = (e) =>{
+    e.preventDefault();
+    console.log('gmail : ',email);
+    console.log('password : ',password);
+    setEmail('')
+    setPassword('')
+  }
   return (
+    <form onSubmit={(e)=>{
+      submitHandler(e);
+    }} >
     <div className="min-h-screen bg-[#f3e9e9] flex items-center justify-center px-4">
             <h2 style={{ fontFamily: "Poppins" }} className="text-indigo-600  absolute text-2xl top-8 center font-bold text-center mb-4">WorkForce Hub</h2>
       
@@ -19,6 +32,10 @@ const Login = () => {
                 <Mail className="text-gray-400 mr-3" size={18} />
 
                 <input
+                value={email}
+                onChange={(e)=>{
+                 setEmail(e.target.value)
+                }}
                   type="email"
                   placeholder="Phone number, username, or email"
                   className="w-full bg-transparent outline-none  text-sm"
@@ -32,6 +49,10 @@ const Login = () => {
                 <Lock className="text-gray-400 mr-3" size={18} />
 
                 <input
+                value={password}
+                onChange={(e) =>{
+                  setPassword(e.target.value)
+                }}
                   type="password"
                   placeholder="Password"
                   className="w-full bg-transparent outline-none text-sm"
@@ -70,6 +91,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </form>
   );
 };
 
