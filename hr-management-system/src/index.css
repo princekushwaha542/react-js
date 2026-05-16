@@ -1,2 +1,6 @@
  @import "tailwindcss";
 
+#tasklist::-webkit-scrollbar {
+background-color: rgb(216, 216, 205);
+  
+}
