@@ -4,24 +4,24 @@ const AdminDashboard = () => {
   return (
     <div>
       <Header />
-       <form className='' >
+       <form className=' bg-red-50 pt-20 pb-25' >
         <div className='flex items-center justify-around w-screen'>
           <div>
         <h2>Task Title</h2>
-        <input type="text" placeholder='input title' />
+        <input className='w-30 h-6' type="text" placeholder='input title' />
        </div>
         
         <div>
           <h3>Date</h3>
-        <input type="date" />
+        <input className='w-30 h-6' type="date" />
         </div>
         <div>
           <h3>Assign to </h3>
-          <input type="text" placeholder='employee name' />
+          <input className='w-30 h-6' type="text" placeholder='employee name' />
         </div>
         <div>
           <h3>Category</h3>
-          <input type="text" placeholder='Design , Development etc.' />
+          <input className='w-30 h-6' type="text" placeholder='Design , Development etc.' />
         </div>
         </div>
         <div className=' flex w-full block mt-20 items-center justify-center'>
