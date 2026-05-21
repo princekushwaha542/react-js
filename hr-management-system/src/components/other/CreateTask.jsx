@@ -3,13 +3,13 @@ import React from 'react'
 const CreateTask = () => {
   return (
     <div>
-       <form className='  pt-20 pb-25 flex  justify-between p-10 pr-70 bg-stone-200' >
+       <form className='  pt-0 pb-2 flex  justify-between p-10 pr-70 bg-stone-200' >
         <div className='flex flex-col  items-start justify-start '>
           <div className='pt-5 pl-5 flexitems-center justify-center rounded-2xl'>
           <h3>Task Title</h3>
           <input className='w-80 h-8 rounded-l  mt-1 bg-stone-100 border border-white pl-5 p-3' type="text" placeholder='Make a UI design ' />
         </div>
-        
+    
         <div className='pt-5 pl-5 flexitems-center justify-center rounded-2xl'>
           <h3>Date</h3>
         <input className='w-80 h-8 rounded-l  mt-1 bg-stone-100 border border-white pl-5 p-3' type="date" />

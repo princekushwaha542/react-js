@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from '../other/header'
 import CreateTask from '../other/CreateTask'
+import AllTask from '../other/AllTask'
 const AdminDashboard = () => {
   return (
     <div>
       <Header />
       <CreateTask />
+      <AllTask />
     </div>
   )
 }
