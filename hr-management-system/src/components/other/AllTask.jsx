@@ -9,12 +9,12 @@ const AllTask = () => {
         <h5 >status: In Progress</h5>
       </div>
       <div className="bg-[#df8484] p-5 rounded-lg mb-5">
-        <h2>Prince</h2>
-        <h3>Task Title: Make a UI design</h3>
+        <h2>Amit</h2>
+        <h3>Task Title: Manage API</h3>
         <h5 >status: In Progress</h5>
       </div><div className="bg-[#df8484] p-5 rounded-lg mb-5">
         <h2>Prince</h2>
-        <h3>Task Title: Make a UI design</h3>
+        <h3>Task Title: Make a Data Base</h3>
         <h5 >status: In Progress</h5>
       </div><div className="bg-[#df8484] p-5 rounded-lg mb-5">
         <h2>Prince</h2>
