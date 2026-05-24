@@ -1,9 +1,10 @@
 import React from 'react'
+import Login from '../components/Auth/Login'
 
 const AuthContext = () => {
   return (
     <div>
-      <h1>AuthContext</h1>
+      <Login></Login>
     </div>
   )
 }

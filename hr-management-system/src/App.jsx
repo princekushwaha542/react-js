@@ -6,10 +6,10 @@ import AuthContext from './context/AuthContext'
  const App = () => {
    return (
   <>
-  {/* <Login /> */}
+  <Login />
   {/* <EmployeeDashboard /> */}
   {/* <AdminDashboard /> */}
-  <AuthContext />
+  {/* <AuthContext /> */}
   </>
    )
  }
