@@ -182,3 +182,6 @@ const admin = [
     password: "123"
   }
 ];
+export const localStorageData = () => {
+  localStorage.setItem("employees", JSON.stringify(employees));
+}
