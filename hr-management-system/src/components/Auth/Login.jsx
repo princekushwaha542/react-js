@@ -72,7 +72,7 @@ const Login = () => {
             </div>
 
             {/* Forgot */}
-            <p className="text-center text-sm text-[#385185] cursor-pointer hover:text-[#fa8280]  font-semibold ">
+            <p className="text-center text-sm text-[#385185] cursor-pointer hover:text-[#1f487e]  font-semibold ">
               Forgot password?
             </p>
           </div>
