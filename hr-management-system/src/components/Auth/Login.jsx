@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Mail, Lock } from "lucide-react";
-
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -73,14 +72,14 @@ const Login = () => {
             </div>
 
             {/* Forgot */}
-            <p className="text-center text-sm text-[#385185] cursor-pointer">
+            <p className="text-center text-sm text-[#385185] cursor-pointer hover:text-[#fa8280]  font-semibold ">
               Forgot password?
             </p>
           </div>
 
           {/* Signup Card */}
           <div className="bg-white border border-gray-300 mt-4 py-6 rounded-2xl text-center">
-            <p className="text-sm">
+            <p className="text-sm ">
               Don’t have an account?{" "}
               <span className="text-[#0095f6] font-semibold cursor-pointer">
                 Sign up

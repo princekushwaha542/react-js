@@ -1,10 +1,10 @@
 import React from 'react'
 import Login from '../components/Auth/Login'
-import LocalStorage from '../utils/localStorage'
+import { SetLocalStorage } from "../utils/localStorage";
 const AuthContext = () => {
   return (
     <div>
-      <LocalStorage />
+      <SetLocalStorage />
       <Login></Login>
     </div>
   )

@@ -1,3 +1,4 @@
+import React from 'react'
 const employees = [
   {
     id: 1,
@@ -182,7 +183,9 @@ const admin = [
     password: "123"
   }
 ];
-export const setLocalStorage = () => {
+console.log(admin)
+export const SetLocalStorage = () => {
+  localStorage.clear();
   localStorage.setItem("employees", JSON.stringify(employees));
   localStorage.setItem("admin", JSON.stringify(admin));
 }
