@@ -178,20 +178,23 @@ const employees = [
 
 const admin = [
   {
-    id: 101,
-    email: "admin@example.com",
-    password: "123"
+    id: 16,
+    email: "kushwahaprince34668@gmail.com",
+    password: "prince43668"
   }
 ];
-console.log(admin)
 export const SetLocalStorage = () => {
   localStorage.clear();
   localStorage.setItem("employees", JSON.stringify(employees));
   localStorage.setItem("admin", JSON.stringify(admin));
 }
 export const GetLocalStorage = () =>{
-  const employees = JSON.parse(localStorage.getItem("employees"));
-  const admin = JSON.parse(localStorage.getItem("admin"));
-  console.log("Employees from Local Storage:", employees);
-  console.log("Admin from Local Storage:", admin);
+  var employees = JSON.parse(localStorage.getItem("employees"));
+  var admin = JSON.parse(localStorage.getItem("admin"));
+}
+export const AdminData = () => {
+  return admin
+}
+export const EmployeesData = () => {
+  return employees
 }
