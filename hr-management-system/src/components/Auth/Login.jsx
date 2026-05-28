@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Mail, Lock } from "lucide-react";
-const Login = () => {
+
+const Login = ({handelLogin}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+
   const submitHandler = (e) =>{
     e.preventDefault();
-    console.log('gmail : ',email);
-    console.log('password : ',password);
+    handelLogin(email , password);
     setEmail('')
     setPassword('')
   }
@@ -72,7 +72,7 @@ const Login = () => {
             </div>
 
             {/* Forgot */}
-            <p className="text-center text-sm text-[#385185] cursor-pointer hover:text-[#1f487e]  font-semibold ">
+            <p className="text-center text-sm text-[#385185] cursor-pointer hover:text-[#f97864]  font-semibold ">
               Forgot password?
             </p>
           </div>
