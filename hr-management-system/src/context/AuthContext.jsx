@@ -43,7 +43,7 @@ const AuthContext = () => {
 
   return (
     <div>
-
+     
       {!user ? <Login handelLogin={handelLogin} /> : ''}
 
       {user == 'admin' 
